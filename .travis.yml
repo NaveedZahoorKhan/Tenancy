@@ -25,7 +25,6 @@ before_install:
   - npm i -g npm
 
 install:
-  - cp .env.example .env
   - travis_retry composer install --no-interaction --prefer-dist --no-suggest
   - npm install --no-audit --no-progress --quiet
   - npm run production
